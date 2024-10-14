@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="security">
+                <i class="fa-solid fa-shield-halved"></i>
+                <i class="fa-solid fa-record-vinyl"></i>
+                <span id="time"></span>
+            </div>
+
+            <div class="users">
+            <div class="icons">
+                <i class="fa-regular fa-comment"></i><br/>
+                <span>Chat</span>
+            </div>
+
+            <div class="icons">
+                <i class="fa-regular fa-user"></i> <span>11</span><br/>
+                <span>People</span>
+            </div>
+
+            <div class="icons">
+                <i class="fa-regular fa-hand"></i> <br/>
+                <span>Raise</span>
+            </div>
+
+            <div class="icons">
+                <i class="fa-regular fa-face-smile"></i><br/>
+                <span>React</span>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-expand"></i><br/>
+                <span>View</span>
+            </div>
+
+
+                <div class="icons">
+                    <i class="fa-solid fa-book"></i><br/>
+                <span>Note</span>
+            </div>
+
+
+                <div class="icons">
+                    <i class="fa-solid fa-box"></i><br/>
+                <span>Room</span>
+            </div>
+
+
+                <div class="icons">
+                    <i class="fa-brands fa-app-store-ios"></i><br/>
+                <span>Apps</span>
+            </div>
+
+
+                <div class="icons">
+                    <i class="fa-solid fa-ellipsis"></i><br/>
+                <span>More</span>
+            </div>
+            <hr />
+
+            <div class="icons">
+                <i class="fa-solid fa-video-slash"></i><br/>
+            <span>Camera</span>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-microphone-slash"></i><br/>
+        <span>Mic</span>
+    </div>
+
+    <div class="icons">
+        <i class="fa-solid fa-square-share-nodes"></i><br/>
+    <span>Share</span>
+</div>
+               <div class="button">
+                <button id="btn"><i class="fa-solid fa-phone"></i>  Leave </button>
+               </div>
+
+        </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="box">
+
+            <div class="border">
+                <div>
+                <div class="border2">
+                    <span>SK</span> 
+                </div>
+                <div class="mic">
+                    <span>Shivam Kumar</span>
+                </div>
+            </div>
+            </div>
+
+
+
+            <div class="border-size">
+                <div>
+                <div class="border2-size">
+                    <span>J</span>
+                </div>
+                <div class="mic">
+                    <span>Jagaur</span>
+                    </div>
+            </div>
+            </div>
+
+
+
+            <div class="border-size1">
+                <div>
+                <div class="border3-size">
+                    <span>S</span>
+                </div>
+                <div class="mic">
+                    <span>Salman</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="border-size2">
+                <div>
+                <div class="border4-size">
+                    <span>SR</span>
+                </div>
+                <div class="mic">
+                    <span>S.Rohit</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="border">
+                <div>
+                <div class="border2">
+                    <span>P</span>
+                </div>
+                <div class="mic">
+                    <span>Peter parkar</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="border-size3">
+                <div>
+                <div class="border5-size">
+                    <span>DS</span>
+                </div>
+                <div class="mic">
+                    <span>D.Spiderman</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="border">
+                <div>
+                <div class="border2">
+                    <span>M</span>
+                </div>
+                <div class="mic">
+                    <span>marval</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="border-size4">
+                <div>
+                <div class="border6-size">
+                    <span>S</span>
+                </div>
+                <div class="mic">
+                    <span>Superman</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="border">
+                <div>
+                <div class="border2">
+                    <span>B</span>
+                </div>
+                <div class="mic">
+                    <span>batman</span>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+    </section>
+
+<footer>
+
+    <center>
+        <span id="sp1"> < </span> <span id="sp2"> 1/2 </span> <span> > </span>
+    </center>
+</footer>
+
+    <script>
+        function updateTime(){
+            const now  =  new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes =  String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const currTime  =  `${hours}:${minutes}:${seconds}`
+
+            document.getElementById("time").textContent =  currTime
+
+            setInterval(updateTime, 1000);
+        }
+        updateTime()
+    </script>
+    
+</body>
+</html>
